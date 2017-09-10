@@ -14,7 +14,7 @@ ENV REACT_APP_USERS_SERVICE_URL $REACT_APP_USERS_SERVICE_URL
 
 # isntall and cache app deps
 ADD package.json /usr/src/app/package.json
-RUN npm install --silent
+RUN npm install
 RUN npm install pushstate-server -g --silent
 
 ADD . /usr/src/app
